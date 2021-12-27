@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="اعدادات النصاب"
+                android:textColor="#F57F17"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:text="نصاب المال "
+                android:textColor="#F57F17"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/et_Nmony"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="ادخل النصاب الجديد"
+                android:inputType="number"
+                android:textColorHighlight="#F57F17"
+                android:textColorHint="#9CFDFDFD" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:text="نصاب الذهب "
+                android:textColor="#F57F17"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/et_Nlor"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="ادخل النصاب الجديد"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9CFFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:checkedButton="@id/rb_24c">
+
+
+                <RadioButton
+                    android:id="@+id/rb_24c"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="clickR"
+                    android:text="24"
+                    android:textColor="#FF6F00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_21c"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="clickR"
+                    android:text="21"
+                    android:textColor="#FF6F00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_18c"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="clickR"
+                    android:text="18"
+                    android:textColor="#FF6F00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="right"
+                android:text="نصاب الفضة"
+                android:textColor="#F57F17"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <EditText
+                android:id="@+id/et_Nargent"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="ادخل النصاب الجديد"
+                android:inputType="number"
+                android:textColorHint="#92FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_saveN2"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/divider_horizontal_dim_dark"
+                android:gravity="center"
+                android:onClick="back"
+                android:text="عودة"
+                android:textColor="#F57F17"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_saveN"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/divider_horizontal_dim_dark"
+                android:gravity="center"
+                android:onClick="save"
+                android:text="حفظ"
+                android:textColor="#F57F17"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

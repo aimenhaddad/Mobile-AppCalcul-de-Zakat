@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zakat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zakat">
+        <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".setting"
+            android:exported="false" />
+        <activity
+            android:name=".res_lor"
+            android:exported="false" />
+        <activity
+            android:name=".res_largent"
+            android:exported="false" />
+        <activity
+            android:name=".res_Numeraires"
+            android:exported="false" />
+        <activity
+            android:name=".res_ArtiNati"
+            android:exported="false" />
+        <activity
+            android:name=".res_naturelle"
+            android:exported="false" />
+        <activity
+            android:name=".res_artificiellea"
+            android:exported="false" />
+        <activity
+            android:name=".res_Bovin"
+            android:exported="false" />
+        <activity
+            android:name=".res_Ovons"
+            android:exported="false" />
+        <activity
+            android:name=".res_Chamaux"
+            android:exported="false" />
+        <activity
+            android:name=".Numeraires"
+            android:exported="false" />
+        <activity
+            android:name=".ArtificielleaNaturelle"
+            android:exported="false" />
+        <activity
+            android:name=".largent"
+            android:exported="false" />
+        <activity
+            android:name=".Lor"
+            android:exported="false" />
+        <activity
+            android:name=".artificiellea"
+            android:exported="false" />
+        <activity
+            android:name=".naturelle"
+            android:exported="false" />
+        <activity
+            android:name=".Bovin"
+            android:exported="false" />
+        <activity
+            android:name=".Ovins"
+            android:exported="false" />
+        <activity
+            android:name=".chameaux"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
